@@ -33,8 +33,6 @@ while t <= 10:
     y = y + h/6*(k1 + 2*k2 + 2*k3 + k4)
     t = t + h
 
-    print('{:.14e}'.format(y))
-   
     X.append(t)
     Y.append(y)
 

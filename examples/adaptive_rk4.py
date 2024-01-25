@@ -7,10 +7,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(t, y):
-    return y*t
+    return np.sin(t)**2*y
 
 def exact(t):
-    return np.exp(t**2/2)
+    return np.exp(-1/4*np.sin(2*t)+1/2*t)
 
 C = np.array([0, 1/4, 3/8, 12/13, 1, 1/2])
 B = np.array([16/135, 0, 6656/12825, 28561/56430, -9/50, 2/55])
